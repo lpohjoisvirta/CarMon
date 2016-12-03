@@ -66,12 +66,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\ActivityUtilities.cs" />
+    <Compile Include="Activities\ExpendatureAdapter.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\NewEntryActivity.cs" />
     <Compile Include="Model\Analyser.cs" />
     <Compile Include="Model\CarInfo.cs" />
     <Compile Include="Model\CarMonApplication.cs" />
     <Compile Include="Model\Expendature.cs" />
+    <Compile Include="Model\ExpendatureHandler.cs" />
     <Compile Include="Model\Exporter.cs" />
     <Compile Include="Model\ExpendatureRepositoryConnection.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -83,6 +85,9 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\NewEntry.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

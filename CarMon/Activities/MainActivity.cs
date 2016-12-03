@@ -8,15 +8,24 @@ using Android.OS;
 using CarMon.Model;
 using System.Linq;
 
-namespace CarMon
+namespace CarMon.Activities
 {
 	[Activity( Label = "CarMon", MainLauncher = true, Icon = "@drawable/icon" )]
 	public class MainActivity : Activity
 	{
-		
+
+		private CarMonApp CarMon { get { return ( CarMonApp )this.Application; } }
+
+		/// <summary>
+		/// Upon creation.
+		/// </summary>
+		/// <param name="bundle"></param>
 		protected override void OnCreate( Bundle bundle )
 		{
 			base.OnCreate( bundle );
+
+			// Initialize the application.
+			this.CarMon.Initialize();
 
 			// Set our view from the "main" layout resource
 			SetContentView( Resource.Layout.Main );
@@ -62,9 +71,10 @@ namespace CarMon
 		{
 			// Update the list with the specified number of items.
 			int itemsToShow = 10;
-			string[] objects = new ExpendatureRepositoryConnection().Fetch().Select( obj => obj.ToString() ).Take( itemsToShow ).ToArray();
-			var adapter = new ArrayAdapter<string>( this, Android.Resource.Layout.SimpleListItem1, objects );
-			FindViewById<ListView>( Resource.Id.ExpendatureList ).Adapter = adapter;
+			var objects = this.CarMon.ExpendatureHandler.Expendatures
+					.Take( itemsToShow ).ToArray();
+			var adapter = new ExpendatureAdapter( this, objects );
+			FindViewById< ListView >( Resource.Id.ExpendatureList ).Adapter = adapter;
 		}
 	}
 

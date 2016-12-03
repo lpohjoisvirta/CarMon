@@ -37,7 +37,11 @@ namespace CarMon.Model
 
 		public int GetMaxDistance()
 		{
-			return db.Table< Expendature >().Aggregate( ( currentMax, x ) => ( currentMax == null || ( x.DistanceCovered > currentMax.DistanceCovered ) ) ? x : currentMax ).DistanceCovered;
+			var table = db.Table< Expendature >();
+			if( table.Any() )
+				return table.Aggregate( ( currentMax, x ) => ( currentMax == null || ( x.DistanceCovered > currentMax.DistanceCovered ) ) ? x : currentMax ).DistanceCovered;
+			else
+				return 0;
 		}
 
 		public void Clear()

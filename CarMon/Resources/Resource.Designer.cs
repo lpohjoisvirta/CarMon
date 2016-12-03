@@ -60,38 +60,47 @@ namespace CarMon
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070005
-			public const int EntryType = 2131165189;
-			
-			// aapt resource value: 0x7f070001
-			public const int ExpendatureList = 2131165185;
-			
-			// aapt resource value: 0x7f070006
-			public const int InputNumber = 2131165190;
-			
-			// aapt resource value: 0x7f070003
-			public const int Kilometers = 2131165187;
-			
-			// aapt resource value: 0x7f070000
-			public const int NewEntry = 2131165184;
+			// aapt resource value: 0x7f070008
+			public const int EntryType = 2131165192;
 			
 			// aapt resource value: 0x7f070004
-			public const int costText = 2131165188;
-			
-			// aapt resource value: 0x7f070007
-			public const int create = 2131165191;
-			
-			// aapt resource value: 0x7f07000a
-			public const int help = 2131165194;
+			public const int ExpendatureList = 2131165188;
 			
 			// aapt resource value: 0x7f070009
-			public const int new_game1 = 2131165193;
+			public const int InputNumber = 2131165193;
 			
-			// aapt resource value: 0x7f070008
-			public const int reset = 2131165192;
+			// aapt resource value: 0x7f070006
+			public const int Kilometers = 2131165190;
+			
+			// aapt resource value: 0x7f070003
+			public const int NewEntry = 2131165187;
+			
+			// aapt resource value: 0x7f070007
+			public const int costText = 2131165191;
+			
+			// aapt resource value: 0x7f07000a
+			public const int create = 2131165194;
 			
 			// aapt resource value: 0x7f070002
-			public const int textView1 = 2131165186;
+			public const int expendatureCostText = 2131165186;
+			
+			// aapt resource value: 0x7f070001
+			public const int expendatureDistanceText = 2131165185;
+			
+			// aapt resource value: 0x7f070000
+			public const int expendatureTypeText = 2131165184;
+			
+			// aapt resource value: 0x7f07000d
+			public const int help = 2131165197;
+			
+			// aapt resource value: 0x7f07000c
+			public const int new_game1 = 2131165196;
+			
+			// aapt resource value: 0x7f07000b
+			public const int reset = 2131165195;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView1 = 2131165189;
 			
 			static Id()
 			{
@@ -107,10 +116,13 @@ namespace CarMon
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int ListItem = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int NewEntry = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int NewEntry = 2130903042;
 			
 			static Layout()
 			{
