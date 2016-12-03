@@ -45,10 +45,7 @@ namespace CarMon
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Add = 2130837504;
-			
-			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int Icon = 2130837504;
 			
 			static Drawable()
 			{
@@ -63,38 +60,38 @@ namespace CarMon
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060005
-			public const int EntryType = 2131099653;
+			// aapt resource value: 0x7f070005
+			public const int EntryType = 2131165189;
 			
-			// aapt resource value: 0x7f060001
-			public const int ExpendatureList = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int ExpendatureList = 2131165185;
 			
-			// aapt resource value: 0x7f060006
-			public const int InputNumber = 2131099654;
+			// aapt resource value: 0x7f070006
+			public const int InputNumber = 2131165190;
 			
-			// aapt resource value: 0x7f060003
-			public const int Kilometers = 2131099651;
+			// aapt resource value: 0x7f070003
+			public const int Kilometers = 2131165187;
 			
-			// aapt resource value: 0x7f060000
-			public const int NewEntry = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int NewEntry = 2131165184;
 			
-			// aapt resource value: 0x7f060004
-			public const int costText = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int costText = 2131165188;
 			
-			// aapt resource value: 0x7f060007
-			public const int create = 2131099655;
+			// aapt resource value: 0x7f070007
+			public const int create = 2131165191;
 			
-			// aapt resource value: 0x7f06000a
-			public const int help = 2131099658;
+			// aapt resource value: 0x7f07000a
+			public const int help = 2131165194;
 			
-			// aapt resource value: 0x7f060009
-			public const int new_game1 = 2131099657;
+			// aapt resource value: 0x7f070009
+			public const int new_game1 = 2131165193;
 			
-			// aapt resource value: 0x7f060008
-			public const int reset = 2131099656;
+			// aapt resource value: 0x7f070008
+			public const int reset = 2131165192;
 			
-			// aapt resource value: 0x7f060002
-			public const int textView1 = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int textView1 = 2131165186;
 			
 			static Id()
 			{
@@ -128,8 +125,8 @@ namespace CarMon
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int menu = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int menu = 2131099648;
 			
 			static Menu()
 			{
@@ -159,6 +156,37 @@ namespace CarMon
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050005
+			public const int GeneralButton = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int GeneralFont = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int ListFont = 2131034115;
+			
+			// aapt resource value: 0x7f050000
+			public const int ThemeSelector = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int myTheme_ActionBar = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int myTheme_ActionBar_Text = 2131034114;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

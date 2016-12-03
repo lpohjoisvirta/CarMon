@@ -64,7 +64,7 @@ namespace CarMon
 			spinner.MaxValue = 500000;
 			spinner.SetFormatter( this.NumberConverter );
 			spinner.WrapSelectorWheel = false;
-			spinner.Value = this.NumberConverter.ConvertToWidgetValue( new ExpendatureRepository().GetMaxDistance() );
+			spinner.Value = this.NumberConverter.ConvertToWidgetValue( new ExpendatureRepositoryConnection().GetMaxDistance() );
 
 			// Set the add action.
 			var createButton = FindViewById< Button >( Resource.Id.create );
@@ -96,7 +96,7 @@ namespace CarMon
 				var expendature = new Expendature( type, distanceCovered, payment );
 
 				// Add to the database.
-				new ExpendatureRepository().Add( expendature );
+				new ExpendatureRepositoryConnection().Add( expendature );
 
 				// We are done. Stop the activity.
 				Finish();

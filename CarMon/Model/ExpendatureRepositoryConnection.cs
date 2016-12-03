@@ -14,11 +14,11 @@ using System.IO;
 
 namespace CarMon.Model
 {
-	public class ExpendatureRepository
+	public class ExpendatureRepositoryConnection
 	{
 		private SQLiteConnection db;
 		string dbPath = Path.Combine( System.Environment.GetFolderPath( System.Environment.SpecialFolder.Personal ), "carmon.db3" );
-		public ExpendatureRepository()
+		public ExpendatureRepositoryConnection()
 		{
 			db = new SQLiteConnection( dbPath );
 			db.CreateTable<Expendature>();

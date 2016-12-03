@@ -42,7 +42,7 @@ namespace CarMon
 			switch( item.ItemId )
 			{
 				case Resource.Id.reset:
-					new ExpendatureRepository().Clear();
+					new ExpendatureRepositoryConnection().Clear();
 					break;
 				case Resource.Id.help:
 					break;
@@ -62,7 +62,7 @@ namespace CarMon
 		{
 			// Update the list with the specified number of items.
 			int itemsToShow = 10;
-			string[] objects = new ExpendatureRepository().Fetch().Select( obj => obj.ToString() ).Take( itemsToShow ).ToArray();
+			string[] objects = new ExpendatureRepositoryConnection().Fetch().Select( obj => obj.ToString() ).Take( itemsToShow ).ToArray();
 			var adapter = new ArrayAdapter<string>( this, Android.Resource.Layout.SimpleListItem1, objects );
 			FindViewById<ListView>( Resource.Id.ExpendatureList ).Adapter = adapter;
 		}
