@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarMon", "CarMon\CarMon.csproj", "{598E3D18-8A00-4915-8900-9EAE31E23F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarMon.Tests", "CarMon.Tests\CarMon.Tests.csproj", "{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598E3D18-8A00-4915-8900-9EAE31E23F1B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5532051E-1CFB-48B9-98DF-EF0E28FC31CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

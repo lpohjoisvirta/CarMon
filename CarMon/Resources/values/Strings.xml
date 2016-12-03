@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="NewEntry">New Entry</string>
+    <string name="ApplicationName">CarMon</string>
+    <string name="NewEntryKilometerText">Set the number of kilometers driven with the car</string>
+</resources>
